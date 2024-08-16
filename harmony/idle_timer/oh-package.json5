@@ -1,0 +1,11 @@
+{
+  "name": "@react-native-oh-tpl/react-native-idle-timer",
+  "version": "2.2.3-0.0.1",
+  "description": "A cross-platform bridge that allows you to enable and disable the screen idle timer in your React Native app",
+  "main": "Index.ets",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@rnoh/react-native-openharmony": "file:../libs/react_native_openharmony-5.0.0.490.har"
+  }
+}

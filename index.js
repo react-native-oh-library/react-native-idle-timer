@@ -1,7 +1,17 @@
 'use strict'
 
-var { NativeModules } = require('react-native')
+import { NativeModules, TurboModuleRegistry } from 'react-native';
 
-module.exports.setIdleTimerDisabled = (disabled, tag = "") => {
-  NativeModules.IdleTimerManager.setIdleTimerDisabled(disabled, tag);
-}
+const IdleTimerManager = TurboModuleRegistry ? TurboModuleRegistry.get('IdleTimerNativeModule') : NativeModules.IdleTimerNativeModule;
+
+export default IdleTimerManager;
+
+
+
+
+
+
+
+
+
+
